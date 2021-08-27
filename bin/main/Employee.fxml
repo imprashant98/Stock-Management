@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" fx:id="EmpMAinPane" prefHeight="814.0" prefWidth="845.0" style="-fx-background-color: #16161d;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="EmergingWorld.Controller.EmployeeController">
+   <children>
+      <Pane fx:id="EmpPaneTop" prefHeight="147.0" prefWidth="600.0">
+         <children>
+            <ImageView fitHeight="207.0" fitWidth="986.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@EmergingWorld/images/Temployee.jpg" />
+               </image>
+            </ImageView>
+         </children></Pane>
+      <Pane fx:id="EmpPaneBottom" layoutY="206.0" prefHeight="600.0" prefWidth="845.0">
+         <children>
+            <Button fx:id="AddEmpButton" layoutX="300.0" layoutY="49.0" onAction="#AddEmpAction" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="43.0" prefWidth="166.0" style="-fx-background-color: #560c59;" text="Add Employee" textFill="WHITE">
+               <font>
+                  <Font name="Abyssinica SIL" size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="RemoveEmpButton" layoutX="482.0" layoutY="49.0" onAction="#RemEmpAction" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="43.0" prefWidth="166.0" style="-fx-background-color: #560c59;" text="Remove Employee" textFill="WHITE">
+               <font>
+                  <Font name="Abyssinica SIL" size="17.0" />
+               </font>
+            </Button>
+            <TableView fx:id="EmpTable" layoutY="107.0" prefHeight="494.0" prefWidth="845.0" stylesheets="@layoutTheme.css">
+              <columns>
+                <TableColumn fx:id="EmpIdCol" prefWidth="75.0" text="EMP_ID" />
+                <TableColumn fx:id="EmpNameCol" prefWidth="126.0" text="NAME" />
+                  <TableColumn fx:id="EmpGenderCol" prefWidth="71.0" text="GENDER" />
+                  <TableColumn fx:id="EmpAddrCol" prefWidth="108.0" text="Address" />
+                  <TableColumn fx:id="EmpContact" prefWidth="101.0" text="Mob No." />
+                  <TableColumn fx:id="CitizenshipCol" prefWidth="134.0" text="Citizenship No." />
+                  <TableColumn fx:id="DesignationCol" prefWidth="114.0" text="Designation" />
+                  <TableColumn fx:id="EmailCol" prefWidth="115.0" text="e-Mail" />
+              </columns>
+            </TableView>
+            <Button fx:id="Refreshbutton" layoutX="665.0" layoutY="49.0" onAction="#RefreshAction" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="43.0" prefWidth="166.0" style="-fx-background-color: #560c59;" text="Refresh" textFill="WHITE">
+               <font>
+                  <Font name="Abyssinica SIL" size="17.0" />
+               </font>
+            </Button>
+         
+             <Button fx:id="backButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#onBack" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="25.0" prefWidth="58.0" style="-fx-background-color: red;" text="&lt;Back">
+                 <font>
+                     <Font name="System Bold" size="12.0" />
+                 </font>
+             </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

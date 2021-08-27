@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" fx:id="BillsMainPane" prefHeight="828.0" prefWidth="824.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="EmergingWorld.Controller.BillsController">
+   <children>
+      <Pane fx:id="BillsTopPane" prefHeight="193.0" prefWidth="824.0" style="-fx-background-color: #16161d;">
+         <children>
+            <ImageView fitHeight="206.0" fitWidth="824.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@EmergingWorld/images/Tsales.jpg" />
+
+               </image>
+            </ImageView>
+         </children></Pane>
+      <Pane fx:id="BillsBottomPane" layoutY="191.0" prefHeight="699.0" prefWidth="824.0" style="-fx-background-color: #16161d;">
+         <children>
+            <TextField fx:id="ProductIdTextField" layoutX="14.0" layoutY="53.0" prefHeight="48.0" prefWidth="311.0" promptText="Enter Bill Id">
+               <font>
+                  <Font name="Abyssinica SIL" size="22.0" />
+               </font>
+            </TextField>
+            <Button fx:id="ProductIdButton" layoutX="412.0" layoutY="53.0" onAction="#SearchByIdAction" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="46.0" prefWidth="181.0" style="-fx-background-color: #560c59;" text="SEARCH BY BlLL ID" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button fx:id="DateButton" layoutX="412.0" layoutY="126.0" onAction="#SearchByDateAction" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="46.0" prefWidth="181.0" style="-fx-background-color: #560c59;" text="SEARCH BY DATE" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <TableView fx:id="BillsTable" layoutY="198.0" prefHeight="499.0" prefWidth="824.0" style="-fx-background-color: #16161d;" stylesheets="@layoutTheme.css">
+              <columns>
+                <TableColumn fx:id="BillsProductIdCol" prefWidth="62.0" text="Bill ID" />
+                <TableColumn fx:id="BillsProductNameCol" prefWidth="106.0" text="Product" />
+                  <TableColumn fx:id="BillsCustomerNameCol" prefWidth="114.0" text="Customer" />
+                  <TableColumn fx:id="BillsCustomerAddrCol" prefWidth="97.0" text="ADDRESS" />
+                  <TableColumn fx:id="BillsContactCol" prefWidth="144.0" text="Mob No." />
+                  <TableColumn fx:id="BillsDateCol" minWidth="0.0" prefWidth="145.0" text="DATE" />
+                  <TableColumn fx:id="EmpIdCol" prefWidth="155.0" text="EmpID" />
+              </columns>
+            </TableView>
+            <DatePicker fx:id="BillsDate" layoutX="14.0" layoutY="126.0" prefHeight="46.0" prefWidth="311.0" promptText="Select Date" style="-fx-background-color: #a842a1;" />
+            <Button fx:id="RefreshButton" layoutX="618.0" layoutY="87.0" onAction="#RefreshAction" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="51.0" prefWidth="155.0" style="-fx-background-color: #560c59;" text="REFRESH" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font></Button>
+         
+             <Button fx:id="backButton" layoutX="14.0" layoutY="2.0" mnemonicParsing="false" onAction="#onBack" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="25.0" prefWidth="58.0" style="-fx-background-color: red;" text="&lt;Back">
+                 <font>
+                     <Font name="System Bold" size="12.0" />
+                 </font>
+             </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.*?>
+<AnchorPane id="AnchorPane" fx:id="AnchorPane" prefHeight="780.0" prefWidth="892.0"
+            style="-fx-background-color: #16161d;" xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="EmergingWorld.Controller.ItemController">
+    <children>
+        <Pane fx:id="Pane1" prefHeight="218.0" prefWidth="892.0">
+            <children>
+                <ImageView fx:id="Pane1Image" fitHeight="219.0" fitWidth="1027.0" layoutY="-1.0" pickOnBounds="true"
+                           preserveRatio="true">
+                    <image>
+                        <Image url="@EmergingWorld/images/Tproducts.jpg"/>
+                    </image>
+                </ImageView>
+            </children>
+        </Pane>
+        <Pane fx:id="Pane2" layoutX="-1.0" layoutY="220.0" prefHeight="559.0" prefWidth="892.0">
+            <children>
+                <ComboBox fx:id="SelectProductCombo" layoutX="220.0" layoutY="27.0" prefHeight="25.0" prefWidth="261.0"
+                          promptText="Select Product Category" style="-fx-background-color: cyan;"/>
+                <Label fx:id="SelectCategoryField" layoutX="18.0" layoutY="27.0" prefHeight="27.0" prefWidth="146.0"
+                       text="Select Category" textFill="WHITE">
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                </Label>
+                <TableView fx:id="productTable" layoutX="-1.0" layoutY="81.0" prefHeight="404.0"
+                           prefWidth="892.0" stylesheets="@layoutTheme.css">
+                    <columns>
+                        <TableColumn fx:id="TableSno" prefWidth="83.0" text="S.No"/>
+                        <TableColumn fx:id="TableCname" minWidth="0.0" prefWidth="134.0" text="Company Name"/>
+                        <TableColumn fx:id="TablePname" minWidth="1.0" prefWidth="203.0" text="Product Name"/>
+                        <TableColumn fx:id="TableQuantity" prefWidth="110.0" text="Quantity"/>
+                        <TableColumn fx:id="TablePrice" prefWidth="212.0" text="Price Per Product"/>
+                        <TableColumn fx:id="TableDId" prefWidth="147.0" text="Dealer Id"/>
+                    </columns>
+                </TableView>
+                <Button fx:id="RemoveButton" layoutX="715.0" layoutY="494.0" onAction="#button1"
+                        onMouseEntered="#entered" onMouseExited="#exited" prefHeight="51.0" prefWidth="146.0"
+                        style="-fx-background-color: #560c59;" text="Remove" textFill="WHITE">
+                    <font>
+                        <Font size="24.0"/>
+                    </font>
+                </Button>
+                <Button fx:id="search" layoutX="527.0" layoutY="20.0" onAction="#button1" onMouseEntered="#entered"
+                        onMouseExited="#exited" prefHeight="35.0" prefWidth="125.0"
+                        style="-fx-background-color: #560c59;" text="Search" textFill="WHITE">
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                </Button>
+                <Button fx:id="refresh" layoutX="481.0" layoutY="494.0" onAction="#button1" onMouseEntered="#entered"
+                        onMouseExited="#exited" prefHeight="51.0" prefWidth="146.0"
+                        style="-fx-background-color: #560c59;" text="Refresh" textFill="WHITE">
+                    <font>
+                        <Font size="24.0"/>
+                    </font>
+                </Button>
+                <Button fx:id="backButton" layoutX="25.0" layoutY="494.0" mnemonicParsing="false" onAction="#onHome"
+                        onMouseEntered="#entered" onMouseExited="#exited" prefHeight="51.0" prefWidth="146.0"
+                        style="-fx-background-color: red;" text="Home" textFill="WHITE">
+
+                    <font>
+                        <Font size="24.0"/>
+                    </font>
+                </Button>
+                <Button fx:id="addButton" layoutX="250.0" layoutY="494.0" mnemonicParsing="false" onAction="#onAdd"
+                        prefHeight="51.0" prefWidth="146.0" style="-fx-background-color: #560c59;" text="Add"
+                        textFill="WHITE">
+                    <font>
+                        <Font size="24.0"/>
+                    </font>
+                </Button>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

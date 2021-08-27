@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" fx:id="AnchorPane" prefHeight="305.0" prefWidth="388.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="EmergingWorld.Controller.AddCategoryFXMLDocumentController">
+    <children>
+        <Pane fx:id="Pane1" prefHeight="108.0" prefWidth="388.0">
+            <children>
+                <ImageView fx:id="Pane1Image" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@EmergingWorld/images/TaddCategory.jpg" />
+                    </image>
+                </ImageView>
+            </children>
+        </Pane>
+        <Pane fx:id="Pane2" layoutY="108.0" prefHeight="197.0" prefWidth="388.0" style="-fx-background-color: #16161d;">
+            <children>
+                <TextField fx:id="CategoryText" layoutX="161.0" layoutY="56.0" prefHeight="33.0" prefWidth="213.0" />
+                <Label fx:id="CategoryLabel" layoutX="14.0" layoutY="56.0" prefHeight="33.0" prefWidth="129.0" text="Category Name" textFill="WHITE">
+                    <font>
+                        <Font name="Arial" size="17.0" />
+                    </font>
+                </Label>
+                <Button fx:id="CategoryButton" onMouseEntered="#entered" onMouseExited="#exited" layoutX="222.0" layoutY="124.0" onAction="#categoryButton" prefHeight="48.0" prefWidth="129.0" style="-fx-background-color: #560c59;" text="Add " textFill="WHITE">
+                    <font>
+                        <Font size="22.0" />
+                    </font>
+                </Button>
+                <Button fx:id="backButton" onMouseEntered="#entered" onMouseExited="#exited" layoutX="25.0" layoutY="124.0" onAction="#onBack" prefHeight="48.0" prefWidth="129.0" style="-fx-background-color: red;" text="Back" textFill="WHITE">
+                    <font>
+                        <Font size="22.0" />
+                    </font>
+                </Button>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

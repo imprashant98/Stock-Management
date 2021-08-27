@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" fx:id="RemDealerMainPane" prefHeight="838.0" prefWidth="791.0" style="-fx-background-color: #16161d;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="EmergingWorld.Controller.DealerController">
+   <children>
+      <Pane fx:id="RemDealerTopPane" prefHeight="181.0" prefWidth="791.0" style="-fx-background-color: #16161d;">
+         <children>
+            <ImageView fitHeight="194.0" fitWidth="953.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@EmergingWorld/images/Tdealer.jpg" />
+               </image>
+            </ImageView>
+         </children></Pane>
+      <Pane fx:id="RemDealerBottomPane" layoutX="2.0" layoutY="194.0" prefHeight="643.0" prefWidth="791.0" style="-fx-background-color: #16161d;">
+         <children>
+            <TableView fx:id="DealerTable" layoutX="7.0" layoutY="91.0" prefHeight="577.0" prefWidth="779.0" stylesheets="@layoutTheme.css">
+               <columns>
+                  <TableColumn fx:id="DealerIdCol" prefWidth="87.0" text="Dealer_ID" />
+                  <TableColumn fx:id="DealerNameCol" prefWidth="92.0" text="NAME" />
+                  <TableColumn fx:id="DealerGenderCol" prefWidth="117.0" text="Gender" />
+                  <TableColumn fx:id="DealerAddrCol" prefWidth="99.0" text="Address" />
+                  <TableColumn fx:id="DealerContact" prefWidth="161.0" text="Mob No." />
+                  <TableColumn fx:id="TinCol" prefWidth="222.0" text="Tax Identification Number" />
+               </columns>
+            </TableView>
+          
+            <Button fx:id="backButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#onBack" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="25.0" prefWidth="58.0" style="-fx-background-color: red;" text="&lt;Back">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="RemoveDealerButton" layoutX="386.0" layoutY="33.0" onAction="#RemDealerAction" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="43.0" prefWidth="166.0" style="-fx-background-color: #560c59;" text="Remove Dealer" textFill="WHITE">
+               <font>
+                  <Font name="Abyssinica SIL" size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="AddDealerButton" layoutX="183.0" layoutY="33.0" onAction="#AddDealerAction" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="43.0" prefWidth="166.0" style="-fx-background-color: #560c59;" text="Add Dealer" textFill="WHITE">
+               <font>
+                  <Font name="Abyssinica SIL" size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="Refresh" layoutX="589.0" layoutY="33.0" onAction="#Refresh" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="43.0" prefWidth="166.0" style="-fx-background-color: #560c59;" text="Refresh" textFill="WHITE">
+               <font>
+                  <Font name="Abyssinica SIL" size="17.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

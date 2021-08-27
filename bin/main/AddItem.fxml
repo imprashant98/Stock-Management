@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" fx:id="AnchorPane" prefHeight="920.0" prefWidth="823.0"
+            style="-fx-background-color: #16161d;" xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="EmergingWorld.Controller.AddItemController">
+   <Pane fx:id="Pane1" prefHeight="241.0" prefWidth="823.0" style="-fx-background-color: #16161d;">
+      <ImageView fx:id="Pane1Image" fitHeight="244.0" fitWidth="823.0" layoutX="1.0" layoutY="-3.0"
+                 pickOnBounds="true" preserveRatio="true">
+         <Image url="@EmergingWorld/images/Titem.jpg"/>
+      </ImageView>
+   </Pane>
+   <Pane fx:id="Pane2" layoutX="4.0" layoutY="254.0" prefHeight="663.0" prefWidth="814.0"
+         style="-fx-background-color: #16161d;">
+      <ComboBox fx:id="cb1" layoutX="244.0" layoutY="114.0" prefHeight="33.0" prefWidth="181.0"
+                promptText="Select Product Category"/>
+      <Label fx:id="l1" layoutX="28.0" layoutY="110.0" prefHeight="33.0" prefWidth="150.0" text="Select Product"
+             textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0"/>
+         </font>
+      </Label>
+      <TextField fx:id="f1" layoutX="238.0" layoutY="183.0" prefHeight="33.0" prefWidth="193.0"
+                 promptText="Company Name"/>
+      <Button fx:id="b1" layoutX="497.0" layoutY="577.0" onAction="#handleButton" onMouseEntered="#entered"
+              onMouseExited="#exited" prefHeight="44.0" prefWidth="213.0" style="-fx-background-color: #560c59;"
+              text="Add Item" textFill="WHITE">
+         <font>
+            <Font name="Arial Unicode MS" size="24.0"/>
+         </font>
+      </Button>
+      <Label fx:id="l2" layoutX="25.0" layoutY="176.0" prefHeight="44.0" prefWidth="150.0" text="Company Name"
+             textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0"/>
+         </font>
+      </Label>
+      <Label fx:id="l3" layoutX="25.0" layoutY="238.0" prefHeight="44.0" prefWidth="150.0" text="Product Name"
+             textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0"/>
+         </font>
+      </Label>
+      <TextField fx:id="f2" layoutX="238.0" layoutY="247.0" prefHeight="33.0" prefWidth="193.0"
+                 promptText="Product name"/>
+      <Label fx:id="l4" layoutX="25.0" layoutY="315.0" prefHeight="44.0" prefWidth="150.0" text="Dealer Id"
+             textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0"/>
+         </font>
+      </Label>
+      <ComboBox fx:id="cb2" layoutX="238.0" layoutY="320.0" prefHeight="33.0" prefWidth="193.0"
+                promptText="Select Dealer Id"/>
+      <Label fx:id="l5" layoutX="28.0" layoutY="390.0" prefHeight="44.0" prefWidth="150.0" text="Quantity"
+             textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0"/>
+         </font>
+      </Label>
+      <TextField fx:id="f3" layoutX="238.0" layoutY="395.0" prefHeight="33.0" prefWidth="193.0"
+                 promptText="quantity"/>
+      <Label fx:id="l6" layoutX="33.0" layoutY="458.0" prefHeight="44.0" prefWidth="150.0" text="Price Per Product"
+             textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0"/>
+         </font>
+      </Label>
+
+      <TextField fx:id="f4" layoutX="238.0" layoutY="467.0" prefHeight="33.0" prefWidth="193.0"
+                 promptText="Rs. xxxxxxxxxxx"/>
+      <DatePicker fx:id="datepick" layoutX="470.0" layoutY="320.0" prefHeight="33.0" prefWidth="213.0"
+                  promptText="Enter Date"/>
+      <Label fx:id="l11" layoutX="470.0" layoutY="114.0" prefHeight="33.0" prefWidth="61.0" text="Bill Id"
+             textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0"/>
+         </font>
+      </Label>
+      <TextField fx:id="f11" editable="false" layoutX="552.0" layoutY="118.0" prefHeight="25.0" prefWidth="126.0"
+                 promptText="xxxxxxx"/>
+      <Button fx:id="clearButton" layoutX="104.0" layoutY="577.0" mnemonicParsing="false" onAction="#onClear"
+              prefHeight="51.0" prefWidth="213.0" style="-fx-background-color: #bf4646;" text="Clear"
+              textFill="WHITE">
+         <font>
+            <Font size="24.0"/>
+         </font>
+      </Button>
+      <Label layoutX="244.0" layoutY="13.0" prefHeight="55.0" prefWidth="274.0" text="Add Items" textFill="WHITE">
+         <font>
+            <Font name="Forte" size="48.0"/>
+         </font>
+      </Label>
+      <Button layoutX="29.0" layoutY="28.0" mnemonicParsing="false" onAction="#onBack" onMouseEntered="#entered"
+              onMouseExited="#exited" prefHeight="25.0" prefWidth="58.0" style="-fx-background-color: red;"
+              text="&lt;Back">
+         <font>
+            <Font name="System Bold" size="12.0"/>
+         </font>
+      </Button>
+   </Pane>
+</AnchorPane>

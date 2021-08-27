@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="726.0" prefWidth="674.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="EmergingWorld.Controller.MainLoginController">
+    <children>
+
+        <Pane fx:id="BottomPane" prefHeight="726.0" prefWidth="674.0" style="-fx-background-color: #16161d;">
+            <children>
+                <TextField fx:id="UserName" layoutX="144.0" layoutY="355.0" prefHeight="44.0" prefWidth="368.0" promptText="Username">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+                </TextField>
+                <Button fx:id="LoginButton" layoutX="410.0" layoutY="605.0" onAction="#loginclicked" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="44.0" prefWidth="178.0" style="-fx-background-color: #560c59;" text="LOGIN" textFill="WHITE">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Button>
+                <PasswordField fx:id="Password" layoutX="150.0" layoutY="465.0" prefHeight="44.0" prefWidth="368.0" promptText="********">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+                </PasswordField>
+                <ImageView fitHeight="216.0" fitWidth="236.0" layoutX="210.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@EmergingWorld/images/login_icon.png" />
+                    </image>
+                </ImageView>
+                <Button fx:id="ForgotPassword" layoutX="86.0" layoutY="605.0" onAction="#forgotPasswordAction" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="44.0" prefWidth="178.0" style="-fx-background-color: #DC143C;" text="Forget Password" textFill="WHITE">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Button>
+                <ImageView fitHeight="44.0" fitWidth="43.0" layoutX="95.0" layoutY="356.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@EmergingWorld/images/username.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="44.0" fitWidth="43.0" layoutX="101.0" layoutY="466.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@EmergingWorld/images/password.png" />
+                    </image>
+                </ImageView>
+            <Button fx:id="exitButton" layoutX="568.0" layoutY="14.0" mnemonicParsing="false" onAction="#onExit" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="43.0" prefWidth="92.0" style="-fx-background-color: red;" text="Exit">
+               <font>
+                  <Font name="Noto Sans Bold" size="21.0" />
+               </font>
+            </Button>
+            <Label layoutX="150.0" layoutY="522.0" onMouseClicked="#createAccount" prefHeight="24.0" prefWidth="255.0" style="-fx-border-color:  #16161d, transparent, white; -fx-border-width: 0 0 1 9, 0 0 1 0, 0 0 1 0;" text="New User?Create an Account" textFill="#a9b1ff">
+               <font>
+                  <Font name="Times New Roman Italic" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

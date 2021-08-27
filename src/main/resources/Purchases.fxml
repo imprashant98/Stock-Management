@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" fx:id="PurchasesMainPane" prefHeight="814.0" prefWidth="845.0" style="-fx-background-color: #16161d;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="EmergingWorld.Controller.PurchasesController">
+   <children>
+      <Pane fx:id="purchasesTopPane" prefHeight="195.0" prefWidth="845.0">
+         <children>
+            <ImageView fitHeight="208.0" fitWidth="907.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@EmergingWorld/images/Tpurchase.jpg" />
+               </image>
+            </ImageView>
+         </children></Pane>
+      <Pane fx:id="purchasesBottomPane" layoutY="209.0" prefHeight="604.0" prefWidth="845.0" style="-fx-background-color: #16161d;">
+         <children>
+            <TableView fx:id="PurchaseTable" layoutY="158.0" prefHeight="506.0" prefWidth="845.0" stylesheets="@layoutTheme.css">
+               <columns>
+                  <TableColumn fx:id="PurchaseProductIdCol" prefWidth="66.0" text="Bill ID" />
+                  <TableColumn fx:id="CompanyCol" prefWidth="139.0" text="Company" />
+                  <TableColumn fx:id="PurchaseProductNameCol" prefWidth="116.0" text="Product" />
+                  <TableColumn fx:id="QuantityCol" prefWidth="87.0" text="Qty" />
+                  <TableColumn fx:id="PriceCol" prefWidth="140.0" text="Price " />
+                  <TableColumn fx:id="PurchaseDealerNameCol" prefWidth="146.0" text="Dealer ID" />
+                  <TableColumn fx:id="PurchaseDateCol" prefWidth="150.0" text="DATE" />
+               </columns>
+            </TableView>
+            <Button fx:id="PurchaseDateButton" layoutX="441.0" layoutY="99.0" onAction="#SearchByDateAction" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="46.0" prefWidth="178.0" style="-fx-background-color: #560c59;" text="SEARCH BY DATE" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button fx:id="PurchaseProductIdButton" layoutX="441.0" layoutY="37.0" onAction="#SearchByPidAction" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="46.0" prefWidth="178.0" style="-fx-background-color: #560c59;" text="SEARCH BY BILL ID" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <TextField fx:id="PurchaseProductIdTextField" layoutX="225.0" layoutY="37.0" prefHeight="46.0" prefWidth="197.0" promptText="Enter Bill Id">
+               <font>
+                  <Font name="Abyssinica SIL" size="17.0" />
+               </font>
+            </TextField>
+            <DatePicker fx:id="PurchaseDate" layoutX="225.0" layoutY="99.0" prefHeight="46.0" prefWidth="197.0" promptText="Select Date" style="-fx-background-color: #a842a1;" />
+            <Button fx:id="DealersButton" layoutX="647.0" layoutY="37.0" onAction="#DealersAction" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="46.0" prefWidth="131.0" style="-fx-background-color: #560c59;" text="DEALERS" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button fx:id="RefreshButton" layoutX="647.0" layoutY="99.0" onAction="#RefreshAction" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="46.0" prefWidth="131.0" style="-fx-background-color: #560c59;" text="REFRESH" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+
+            <Button fx:id="backButton" layoutX="11.0" layoutY="11.0" mnemonicParsing="false" onAction="#onBack" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="25.0" prefWidth="58.0" style="-fx-background-color: red;" text="&lt;Back">
+
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+
+
+         </children>
+
+      </Pane>
+   </children>
+</AnchorPane>

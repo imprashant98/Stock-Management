@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" fx:id="AnchorPane" prefHeight="816.0" prefWidth="861.0" style="-fx-background-color: #16161d;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="EmergingWorld.Controller.ProductFXMLDocumentController">
+   <children>
+      <Pane fx:id="Pane1" prefHeight="214.0" prefWidth="861.0">
+         <children>
+            <ImageView fx:id="Pane1Image" fitHeight="214.0" fitWidth="861.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@EmergingWorld/images/Tproducts.jpg" />
+               </image></ImageView>
+         </children>
+      </Pane>
+      <Pane fx:id="Pane2" layoutX="3.0" layoutY="211.0" prefHeight="603.0" prefWidth="853.0">
+         <children>
+            <ComboBox fx:id="productChoice" layoutX="243.0" layoutY="44.0" onAction="#searchHandle" prefHeight="40.0" prefWidth="368.0" promptText="Select Product" style="-fx-background-color: Cyan;" />
+            <TableView fx:id="productTable" layoutY="116.0" onSort="#productTableHandle" pickOnBounds="false" prefHeight="487.0" prefWidth="853.0" stylesheets="@layoutTheme.css">
+              <columns>
+                <TableColumn fx:id="TableSno" prefWidth="39.0" text="S.No" />
+                <TableColumn fx:id="TableCname" minWidth="0.0" prefWidth="105.0" text="Company Name" />
+                  <TableColumn fx:id="TablePname" minWidth="1.0" prefWidth="158.0" text="Product Name" />
+                  <TableColumn fx:id="TableQuantity" prefWidth="61.0" text="Quantity" />
+                  <TableColumn fx:id="TablePrice" prefWidth="109.0" text="Price Per Product" />
+                  <TableColumn fx:id="TableDId" editable="false" prefWidth="127.0" text="Dealer Id" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+
+            <Button fx:id="backButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#onBack" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="25.0" prefWidth="58.0" style="-fx-background-color: red;" text="Back">
+
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
