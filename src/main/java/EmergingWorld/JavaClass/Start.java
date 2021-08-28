@@ -17,7 +17,7 @@ public class Start extends Application {
     
     @Override
     public void start(Stage stage) {
-      
+
         StageManager.getInstance().mainLoginStage.show();
      
     }

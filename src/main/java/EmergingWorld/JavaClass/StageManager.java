@@ -44,32 +44,32 @@ private StageManager() {
     
     createMainLoginStage();
     createRegisterStage();
-    
+
+
     
     createAddCategoryStage();
     createAddDealerStage();
     createAddEmployeeStage();
-    
+
     createAdminStage();
     createBillStage();
     createBill1Stage();
-    
+
     createCategoryStage();
     createDealerStage();
     createEmployeeStage();
     createForgetPasswordStage();
-    
-    
+
+
     createAddItemStage();
     createItemStage();
     createPaymentStage();
     createProductStage();
     createPurchaseStage();
-    
+
     createQuantityStage();
    // createRemoveItemStage();
     createWarrantyStage();
-    
 }
 
 public static StageManager getInstance() {
@@ -81,12 +81,15 @@ public static StageManager getInstance() {
 private void createMainLoginStage() {
     mainLoginStage = new Stage();
     try {
+
         Parent root = load(getClass().getResource("/MainLogin.fxml"));
+
         Scene scene = new Scene(root);
         mainLoginStage.setScene(scene);
         mainLoginStage.initStyle(StageStyle.UNDECORATED);
         mainLoginStage.setResizable(false);
         mainLoginStage.centerOnScreen();
+
         // mainLoginStage.setResizable(false);
         
     } catch (IOException e) {
