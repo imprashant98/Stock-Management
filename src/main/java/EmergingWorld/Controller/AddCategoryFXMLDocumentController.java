@@ -82,7 +82,9 @@ public void categoryButton(ActionEvent event) {
                     PreparedStatement stmt = con.prepareStatement(str1);
                     stmt.setString(1, CategoryText.getText());
                     stmt.executeUpdate();
-                   String str2="create table "+CategoryText.getText()+"(Company varchar(40) NOT NULL,ProductName varchar(100) NOT NULL,Quantity int(3) NOT NULL,Pricepp int(7) NOT NULL,dealerid varchar(5),PRIMARY KEY(Company,ProductName),FOREIGN KEY (dealerid) REFERENCES dealer(Dealer_ID) ) ";
+                   String str2="create table "+CategoryText.getText()+"" +
+                           "(Company varchar(40) NOT NULL,ProductName varchar(100) NOT NULL,Quantity int(3) NOT NULL,Pricepp int(7) NOT NULL," +
+                           "dealerid varchar(5),PRIMARY KEY(Company,ProductName),FOREIGN KEY (dealerid) REFERENCES dealer(Dealer_ID) ) ";
                    PreparedStatement stmt1=con.prepareStatement(str2);
                     stmt1.executeUpdate();
                     JOptionPane.showMessageDialog(null, "Category Added");

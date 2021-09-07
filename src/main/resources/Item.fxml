@@ -71,7 +71,7 @@
                     </font>
                 </Button>
                 <Button fx:id="addButton" layoutX="250.0" layoutY="494.0" mnemonicParsing="false" onAction="#onAdd"
-                        prefHeight="51.0" prefWidth="146.0" style="-fx-background-color: #560c59;" text="Add"
+                        prefHeight="51.0" onMouseEntered="#entered" onMouseExited="#exited" prefWidth="146.0" style="-fx-background-color: #560c59;" text="Add"
                         textFill="WHITE">
                     <font>
                         <Font size="24.0"/>

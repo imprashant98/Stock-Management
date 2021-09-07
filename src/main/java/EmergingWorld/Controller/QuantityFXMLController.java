@@ -18,6 +18,7 @@ import java.util.ArrayList;
 import java.util.List;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
@@ -35,9 +36,9 @@ Connection con;
      static String s;
     @FXML
     public AnchorPane AnchorPane;
-    
+
     @FXML
-    public ComboBox<Integer> Quantitycombo;
+    public TextField Quantitytext;
 
     @FXML
     public Label Quantitylabel;
@@ -50,7 +51,8 @@ Connection con;
 
     @FXML
     public void removehandle(ActionEvent event) {
-        int c=Quantitycombo.getSelectionModel().getSelectedItem();
+
+        int c = Integer.parseInt(Quantitytext.getText());
         try{
             Class.forName("java.sql.Driver");
             con = DriverManager.getConnection("jdbc:mysql://localhost:3306/storemanagement?&serverTimezone=UTC&autoReconnect=true&failOverReadOnly=false&maxReconnects=10", "root", "");
@@ -58,7 +60,7 @@ Connection con;
             PreparedStatement stmt1=con.prepareStatement(strr);
             ResultSet rs1=stmt1.executeQuery();
             rs1.next();
-            int p=rs1.getInt(3);
+             p = rs1.getInt(3);
             if(c==p){
                 String str="delete from "+q+" where Company = '"+r+"' and ProductName = '"+s+"'";
                 PreparedStatement stmt=con.prepareStatement(str);
@@ -71,6 +73,7 @@ Connection con;
                 stmt.executeUpdate();
             }
             Stage stage=(Stage) removebutton.getScene().getWindow();
+            JOptionPane.showMessageDialog(null,"Removed Successfully");
             stage.close();
                 
         }
@@ -79,27 +82,17 @@ Connection con;
     
         }
     }
-    List<Integer> list = new ArrayList<Integer>();
-   public void fill(){
-        for(int i=0;i<=p;i++){
-            list.add(i);
-        }
-        ObservableList obList = FXCollections.observableList(list);
-            Quantitycombo.getItems().clear();
-            Quantitycombo.setItems(obList);
-        
-    }
+
     @Override
     
     
     public void initialize(URL location, ResourceBundle resources) {
-        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-        fill();
-      
+
+
     }
 
 public void onBack(ActionEvent event) {
-    StageManager.getInstance().adminStage.show();
+    StageManager.getInstance().itemStage.show();
     StageManager.getInstance().quantityStage.hide();
 }
 public void entered(MouseEvent e) {

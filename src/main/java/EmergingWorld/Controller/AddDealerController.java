@@ -153,6 +153,7 @@ public void exited(MouseEvent e) {
 
 public void onBack(ActionEvent event) {
     StageManager.getInstance().addDealerStage.hide();
+    StageManager.getInstance().dealerStage.show();
 }
 
 

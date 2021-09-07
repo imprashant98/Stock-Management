@@ -19,6 +19,7 @@ public class Start extends Application {
     public void start(Stage stage) {
 
         StageManager.getInstance().mainLoginStage.show();
+
      
     }
 

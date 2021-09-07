@@ -29,11 +29,16 @@ import javax.swing.JOptionPane;
 
 public class ItemController implements Initializable {
 
-public Button backButton;
-Connection con;
+
+    Connection con;
 
     @FXML
     public TableColumn<Product1, Integer> TableQuantity;
+
+    @FXML
+    public Button backButton;
+    @FXML
+    public Button addButton;
 
     @FXML
     public TableColumn<Product1, String> TablePname;

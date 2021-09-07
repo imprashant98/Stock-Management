@@ -86,15 +86,15 @@ public Pane RemDealerBottomPane;
     
      @FXML
      public void AddDealerAction(ActionEvent event) {
-        try {
-            AnchorPane root1 = FXMLLoader.load(getClass().getResource("AddDealer.fxml"));
-            Stage stage = new Stage(StageStyle.DECORATED);
-            stage.setTitle("Add A New Dealer");
-            stage.setScene(new Scene(root1)); 
-            stage.show();    
-        } catch (IOException ex) {
-            Logger.getLogger(DealerController.class.getName()).log(Level.SEVERE, null, ex);
-        }
+
+            StageManager.getInstance().addDealerStage.show();
+            StageManager.getInstance().dealerStage.hide();
+//            AnchorPane root1 = FXMLLoader.load(getClass().getResource("AddDealer.fxml"));
+//            Stage stage = new Stage(StageStyle.DECORATED);
+//            stage.setTitle("Add A New Dealer");
+//            stage.setScene(new Scene(root1));
+//            stage.show();
+
     }
 
     @FXML

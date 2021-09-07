@@ -5,7 +5,10 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane id="AnchorPane" fx:id="AnchorPane" prefHeight="305.0" prefWidth="388.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="EmergingWorld.Controller.AddCategoryFXMLDocumentController">
+<AnchorPane id="AnchorPane" fx:id="AnchorPane" prefHeight="305.0" prefWidth="388.0"
+            xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="EmergingWorld.Controller.AddCategoryFXMLDocumentController">
     <children>
         <Pane fx:id="Pane1" prefHeight="108.0" prefWidth="388.0">
             <children>
