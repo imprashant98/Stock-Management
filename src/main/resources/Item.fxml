@@ -50,7 +50,7 @@
                 </Button>
                 <Button fx:id="search" layoutX="527.0" layoutY="20.0" onAction="#button1" onMouseEntered="#entered"
                         onMouseExited="#exited" prefHeight="35.0" prefWidth="125.0"
-                        style="-fx-background-color: #560c59;" text="Search" textFill="WHITE">
+                        style="-fx-background-color: #560c59;" text="View" textFill="WHITE">
                     <font>
                         <Font size="18.0"/>
                     </font>
