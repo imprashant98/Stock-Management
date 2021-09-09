@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="814.0" prefWidth="845.0" style="-fx-background-color: #16161d;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="EmergingWorld.Controller.PaymentController">
+<AnchorPane id="AnchorPane" prefHeight="814.0" prefWidth="845.0" style="-fx-background-color: #16161d;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="EmergingWorld.Controller.PaymentController">
    <children>
       <Pane prefHeight="201.0" prefWidth="845.0">
          <children>
@@ -29,16 +29,21 @@
                 <TableColumn fx:id="col_payMode" prefWidth="421.0" text="Payment Mode" />
               </columns>
             </TableView>
-            <Button fx:id="search" layoutX="572.0" layoutY="80.0" onAction="#OnClick" prefHeight="38.0" prefWidth="219.0" style="-fx-background-color: #560c59;" text="Search by Payment " textFill="WHITE">
+            <Button fx:id="search" layoutX="572.0" layoutY="80.0" onAction="#OnClick" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="38.0" prefWidth="219.0" style="-fx-background-color: #560c59;" text="Search by Payment " textFill="WHITE">
                <font>
                   <Font size="18.0" />
                </font></Button>
-            <Button fx:id="searchID" layoutX="572.0" layoutY="27.0" onAction="#OnClickbill" prefHeight="38.0" prefWidth="219.0" style="-fx-background-color: #560c59;" text="Search by BILL ID" textFill="WHITE">
+            <Button fx:id="searchID" layoutX="572.0" layoutY="27.0" onAction="#OnClickbill" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="38.0" prefWidth="219.0" style="-fx-background-color: #560c59;" text="Search by BILL ID" textFill="WHITE">
                <font>
                   <Font size="18.0" />
                </font></Button>
 
-            <Button fx:id="backButton" layoutX="23.0" layoutY="15.0" mnemonicParsing="false" onAction="#onBack" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="25.0" prefWidth="58.0" style="-fx-background-color: red;" text="&lt;Back">
+            <Button fx:id="backButton" layoutX="23.0" layoutY="15.0" mnemonicParsing="false" onAction="#onBack" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="25.0" prefWidth="58.0" style="-fx-background-color: red;" text="Back">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="viewButton" layoutX="23.0" layoutY="80.0" mnemonicParsing="false" onAction="#onView" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="39.0" prefWidth="119.0" style="-fx-background-color: #560c59;" textFill="White" text="View All">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>

@@ -6,7 +6,9 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="783.0" prefWidth="850.0" style="-fx-background-color: #16161d;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="EmergingWorld.Controller.WarrantyController">
+<AnchorPane id="AnchorPane" prefHeight="783.0" prefWidth="850.0" style="-fx-background-color: #16161d;"
+            xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="EmergingWorld.Controller.WarrantyController">
     <children>
         <Pane layoutX="5.0" prefHeight="246.0" prefWidth="842.0">
             <children>
@@ -21,12 +23,15 @@
             <children>
 
 
-                <Button fx:id="add" disable="true" layoutX="693.0" layoutY="41.0" onAction="#OnMouseClickAdd" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="25.0" prefWidth="113.0" style="-fx-background-color: #560c59;" text="Add" textFill="WHITE" wrapText="true">
+                <Button fx:id="add" disable="true" layoutX="693.0" layoutY="41.0"
+                        onAction="#OnMouseClickAdd" onMouseEntered="#entered" onMouseExited="#exited"
+                        prefHeight="25.0" prefWidth="113.0" style="-fx-background-color: #560c59;" text="Add" textFill="WHITE" wrapText="true">
                <font>
                   <Font size="13.0" />
                </font></Button>
                 <TextField fx:id="bill_id" layoutX="195.0" layoutY="41.0" prefHeight="30.0" prefWidth="149.0" promptText="Bill ID" />
-                <Button fx:id="search" layoutX="366.0" layoutY="41.0" onAction="#OnMouseClick" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="25.0" prefWidth="99.0" style="-fx-background-color: #560c59;" text="Search" textFill="WHITE">
+                <Button fx:id="search" layoutX="366.0" layoutY="41.0" onAction="#OnMouseClick" onMouseEntered="#entered"
+                        onMouseExited="#exited" prefHeight="25.0" prefWidth="99.0" style="-fx-background-color: #560c59;" text="Search" textFill="WHITE">
                <font>
                   <Font size="14.0" />
                </font></Button>
@@ -34,7 +39,8 @@
                 <Label fx:id="label_name" layoutX="186.0" layoutY="124.0" prefHeight="17.0" prefWidth="105.0" />
                 <Label fx:id="label_date" layoutX="306.0" layoutY="124.0" prefHeight="17.0" prefWidth="99.0" />
 
-                <ComboBox fx:id="drop_down" layoutX="519.0" layoutY="41.0" prefHeight="29.0" prefWidth="137.0" promptText="Product Status" style="-fx-background-color: cyan;" visibleRowCount="3" />
+                <ComboBox fx:id="drop_down" layoutX="519.0" layoutY="41.0" prefHeight="29.0"
+                          prefWidth="137.0" promptText="Product Status" style="-fx-background-color: cyan;" visibleRowCount="3" />
                 <TableView fx:id="table" layoutY="93.0" prefHeight="467.0" prefWidth="842.0" stylesheets="@layoutTheme.css">
                     <columns>
                         <TableColumn fx:id="col_billid" prefWidth="126.0" text="Bill ID" />
@@ -44,7 +50,9 @@
                         <TableColumn fx:id="col_warranty" prefWidth="224.0" text="Warranty Status " />
                     </columns>
                 </TableView>
-                <Button fx:id="backButton" layoutX="19.0" layoutY="18.0" mnemonicParsing="false" onAction="#onBack" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="25.0" prefWidth="58.0" style="-fx-background-color: red;" text="&lt;Back">
+                <Button fx:id="backButton" layoutX="19.0" layoutY="18.0" mnemonicParsing="false"
+                        onAction="#onBack" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="25.0"
+                        prefWidth="58.0" style="-fx-background-color: red;" text="Back">
                     <font>
                         <Font name="System Bold" size="12.0" />
                     </font>

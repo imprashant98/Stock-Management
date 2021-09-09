@@ -9,6 +9,11 @@ import java.io.IOException;
 
 import static javafx.fxml.FXMLLoader.load;
 
+/**
+ *
+ * @author Prashant
+ */
+
 public class StageManager {
 
 //For authentication

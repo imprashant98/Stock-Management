@@ -49,7 +49,7 @@ public Button backButton;
 
 
 Connection con;
-
+// animation for the buttons when mouse is hovered to buttons
 public void entered(MouseEvent e) {
     ((Button) e.getSource()).setScaleX(1.1);
     ((Button) e.getSource()).setScaleY(1.1);
@@ -76,7 +76,7 @@ public void categoryButton(ActionEvent event) {
                 try {
                 
                     String str1;
-                    Class.forName("java.sql.Driver");
+                    Class.forName("java.sql.Driver"); // Transfer of files between database and application
                     con = DriverManager.getConnection("jdbc:mysql://localhost:3306/storemanagement?&serverTimezone=UTC&autoReconnect=true&failOverReadOnly=false&maxReconnects=10", "root", "");
                     str1 = "insert into category values(?)";
                     PreparedStatement stmt = con.prepareStatement(str1);

@@ -24,6 +24,12 @@ import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import javax.swing.JOptionPane;
 
+/**
+ * FXML EmergingWorld.Controller class
+ *
+ * @author Prashant
+ */
+
 public class QuantityFXMLController implements Initializable{
 
 

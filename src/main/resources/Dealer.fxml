@@ -5,7 +5,8 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane id="AnchorPane" fx:id="RemDealerMainPane" prefHeight="838.0" prefWidth="791.0" style="-fx-background-color: #16161d;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="EmergingWorld.Controller.DealerController">
+<AnchorPane id="AnchorPane" fx:id="RemDealerMainPane" prefHeight="838.0" prefWidth="791.0" style="-fx-background-color: #16161d;"
+            xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="EmergingWorld.Controller.DealerController">
    <children>
       <Pane fx:id="RemDealerTopPane" prefHeight="181.0" prefWidth="791.0" style="-fx-background-color: #16161d;">
          <children>
@@ -28,22 +29,26 @@
                </columns>
             </TableView>
           
-            <Button fx:id="backButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#onBack" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="25.0" prefWidth="58.0" style="-fx-background-color: red;" text="&lt;Back">
+            <Button fx:id="backButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#onBack" onMouseEntered="#entered"
+                    onMouseExited="#exited" prefHeight="25.0" prefWidth="58.0" style="-fx-background-color: red;" text="&lt;Back">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
             </Button>
-            <Button fx:id="RemoveDealerButton" layoutX="386.0" layoutY="33.0" onAction="#RemDealerAction" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="43.0" prefWidth="166.0" style="-fx-background-color: #560c59;" text="Remove Dealer" textFill="WHITE">
+            <Button fx:id="RemoveDealerButton" layoutX="386.0" layoutY="33.0" onAction="#RemDealerAction" onMouseEntered="#entered"
+                    onMouseExited="#exited" prefHeight="43.0" prefWidth="166.0" style="-fx-background-color: #560c59;" text="Remove Dealer" textFill="WHITE">
                <font>
                   <Font name="Abyssinica SIL" size="17.0" />
                </font>
             </Button>
-            <Button fx:id="AddDealerButton" layoutX="183.0" layoutY="33.0" onAction="#AddDealerAction" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="43.0" prefWidth="166.0" style="-fx-background-color: #560c59;" text="Add Dealer" textFill="WHITE">
+            <Button fx:id="AddDealerButton" layoutX="183.0" layoutY="33.0" onAction="#AddDealerAction" onMouseEntered="#entered"
+                    onMouseExited="#exited" prefHeight="43.0" prefWidth="166.0" style="-fx-background-color: #560c59;" text="Add Dealer" textFill="WHITE">
                <font>
                   <Font name="Abyssinica SIL" size="17.0" />
                </font>
             </Button>
-            <Button fx:id="Refresh" layoutX="589.0" layoutY="33.0" onAction="#Refresh" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="43.0" prefWidth="166.0" style="-fx-background-color: #560c59;" text="Refresh" textFill="WHITE">
+            <Button fx:id="Refresh" layoutX="589.0" layoutY="33.0" onAction="#Refresh" onMouseEntered="#entered" onMouseExited="#exited"
+                    prefHeight="43.0" prefWidth="166.0" style="-fx-background-color: #560c59;" text="Refresh" textFill="WHITE">
                <font>
                   <Font name="Abyssinica SIL" size="17.0" />
                </font>

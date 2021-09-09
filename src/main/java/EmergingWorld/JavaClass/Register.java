@@ -1,5 +1,10 @@
 package EmergingWorld.JavaClass;
 
+/**
+ *
+ * @author Prashant
+ */
+
 public class Register {
 
     private String name;

@@ -16,6 +16,12 @@ import javafx.fxml.Initializable;
 
 import javax.swing.JOptionPane;
 
+/**
+ * FXML EmergingWorld.Controller class
+ *
+ * @author Prashant
+ */
+
 public class MainLoginController implements Initializable {
 
 public Button exitButton;

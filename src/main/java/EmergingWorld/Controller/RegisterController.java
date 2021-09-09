@@ -15,6 +15,11 @@ import java.net.URL;
 import java.sql.*;
 import java.util.ResourceBundle;
 
+/**
+ * FXML EmergingWorld.Controller class
+ *
+ * @author Prashant
+ */
 
 public class RegisterController implements Initializable {
 @FXML

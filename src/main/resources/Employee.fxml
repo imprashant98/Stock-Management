@@ -5,7 +5,8 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane id="AnchorPane" fx:id="EmpMAinPane" prefHeight="814.0" prefWidth="845.0" style="-fx-background-color: #16161d;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="EmergingWorld.Controller.EmployeeController">
+<AnchorPane id="AnchorPane" fx:id="EmpMAinPane" prefHeight="814.0" prefWidth="845.0" style="-fx-background-color: #16161d;"
+            xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="EmergingWorld.Controller.EmployeeController">
    <children>
       <Pane fx:id="EmpPaneTop" prefHeight="147.0" prefWidth="600.0">
          <children>
@@ -17,12 +18,14 @@
          </children></Pane>
       <Pane fx:id="EmpPaneBottom" layoutY="206.0" prefHeight="600.0" prefWidth="845.0">
          <children>
-            <Button fx:id="AddEmpButton" layoutX="300.0" layoutY="49.0" onAction="#AddEmpAction" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="43.0" prefWidth="166.0" style="-fx-background-color: #560c59;" text="Add Employee" textFill="WHITE">
+            <Button fx:id="AddEmpButton" layoutX="300.0" layoutY="49.0" onAction="#AddEmpAction" onMouseEntered="#entered"
+                    onMouseExited="#exited" prefHeight="43.0" prefWidth="166.0" style="-fx-background-color: #560c59;" text="Add Employee" textFill="WHITE">
                <font>
                   <Font name="Abyssinica SIL" size="17.0" />
                </font>
             </Button>
-            <Button fx:id="RemoveEmpButton" layoutX="482.0" layoutY="49.0" onAction="#RemEmpAction" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="43.0" prefWidth="166.0" style="-fx-background-color: #560c59;" text="Remove Employee" textFill="WHITE">
+            <Button fx:id="RemoveEmpButton" layoutX="482.0" layoutY="49.0" onAction="#RemEmpAction" onMouseEntered="#entered"
+                    onMouseExited="#exited" prefHeight="43.0" prefWidth="166.0" style="-fx-background-color: #560c59;" text="Remove Employee" textFill="WHITE">
                <font>
                   <Font name="Abyssinica SIL" size="17.0" />
                </font>
@@ -39,13 +42,15 @@
                   <TableColumn fx:id="EmailCol" prefWidth="115.0" text="e-Mail" />
               </columns>
             </TableView>
-            <Button fx:id="Refreshbutton" layoutX="665.0" layoutY="49.0" onAction="#RefreshAction" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="43.0" prefWidth="166.0" style="-fx-background-color: #560c59;" text="Refresh" textFill="WHITE">
+            <Button fx:id="Refreshbutton" layoutX="665.0" layoutY="49.0" onAction="#RefreshAction" onMouseEntered="#entered"
+                    onMouseExited="#exited" prefHeight="43.0" prefWidth="166.0" style="-fx-background-color: #560c59;" text="Refresh" textFill="WHITE">
                <font>
                   <Font name="Abyssinica SIL" size="17.0" />
                </font>
             </Button>
          
-             <Button fx:id="backButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#onBack" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="25.0" prefWidth="58.0" style="-fx-background-color: red;" text="&lt;Back">
+             <Button fx:id="backButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#onBack"
+                     onMouseEntered="#entered" onMouseExited="#exited" prefHeight="25.0" prefWidth="58.0" style="-fx-background-color: red;" text="Back">
                  <font>
                      <Font name="System Bold" size="12.0" />
                  </font>

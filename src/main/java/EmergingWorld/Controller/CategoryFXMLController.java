@@ -23,6 +23,13 @@ import javafx.scene.input.MouseEvent;
 
 import javax.swing.JOptionPane;
 
+/**
+ * FXML EmergingWorld.Controller class
+ *
+ * @author Prashant
+ */
+
+
 public class CategoryFXMLController implements Initializable {
 
 public Button backButton;

@@ -217,21 +217,9 @@ Connection con;
 
     @FXML
     public  void DealersAction(ActionEvent event) {
-//        try {
-//
-////            Stage stage1 = (Stage)PurchasesMainPane.getScene().getWindow();
-////            stage1.hide();
-////
-////
-////            AnchorPane root1 = FXMLLoader.load(getClass().getResource("Dealer.fxml"));
-////            Stage stage = new Stage(StageStyle.DECORATED);
-////            stage.setTitle("Dealers");
-////            stage.setScene(new Scene(root1));
-////            stage.show();
-//        } catch (IOException ex) {
-//            Logger.getLogger(PurchasesController.class.getName()).log(Level.SEVERE, null, ex);
-//        }
+
         StageManager.getInstance().dealerStage.show();
+        StageManager.getInstance().purchaseStage.hide();
     }
     
     /**

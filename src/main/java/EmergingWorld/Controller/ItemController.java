@@ -27,6 +27,12 @@ import javafx.scene.layout.Pane;
 
 import javax.swing.JOptionPane;
 
+/**
+ * FXML EmergingWorld.Controller class
+ *
+ * @author Prashant
+ */
+
 public class ItemController implements Initializable {
 
 

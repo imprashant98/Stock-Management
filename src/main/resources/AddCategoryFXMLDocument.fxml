@@ -27,12 +27,14 @@
                         <Font name="Arial" size="17.0" />
                     </font>
                 </Label>
-                <Button fx:id="CategoryButton" onMouseEntered="#entered" onMouseExited="#exited" layoutX="222.0" layoutY="124.0" onAction="#categoryButton" prefHeight="48.0" prefWidth="129.0" style="-fx-background-color: #560c59;" text="Add " textFill="WHITE">
+                <Button fx:id="CategoryButton" onMouseEntered="#entered" onMouseExited="#exited" layoutX="222.0" layoutY="124.0"
+                        onAction="#categoryButton" prefHeight="48.0" prefWidth="129.0" style="-fx-background-color: #560c59;" text="Add " textFill="WHITE">
                     <font>
                         <Font size="22.0" />
                     </font>
                 </Button>
-                <Button fx:id="backButton" onMouseEntered="#entered" onMouseExited="#exited" layoutX="25.0" layoutY="124.0" onAction="#onBack" prefHeight="48.0" prefWidth="129.0" style="-fx-background-color: red;" text="Back" textFill="WHITE">
+                <Button fx:id="backButton" onMouseEntered="#entered" onMouseExited="#exited" layoutX="25.0" layoutY="124.0"
+                        onAction="#onBack" prefHeight="48.0" prefWidth="129.0" style="-fx-background-color: red;" text="Back" textFill="WHITE">
                     <font>
                         <Font size="22.0" />
                     </font>

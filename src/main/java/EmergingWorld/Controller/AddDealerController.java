@@ -78,7 +78,7 @@ public void exited(MouseEvent e) {
         return c;
     }
 
-    
+    // extracting data from the frontend and saving it to the variables in order to save the data into database
     @FXML
     public void SubmitAction(ActionEvent event) {
         int c1 = check(DealerMobNo.getText());
@@ -95,7 +95,7 @@ public void exited(MouseEvent e) {
             int tt = 0;
             try {
                 String count;
-                Class.forName("java.sql.Driver");
+                Class.forName("java.sql.Driver"); //connecting the program into the database
                 con = DriverManager.getConnection("jdbc:mysql://localhost:3306/storemanagement?&serverTimezone=UTC&autoReconnect=true&failOverReadOnly=false&maxReconnects=10", "root", "");
                 String str="select Tin_No from dealer";
                 PreparedStatement stmt5=con.prepareStatement(str);
@@ -105,7 +105,7 @@ public void exited(MouseEvent e) {
                         tt=1;
                 }
                 if(tt==0){
-                    String str1 = "Select * FROM dealer ORDER BY Dealer_ID DESC LIMIT 1";
+                    String str1 = "Select * FROM dealer ORDER BY Dealer_ID DESC LIMIT 1"; //Performing the actions in the dealer table
                     PreparedStatement stmt1=con.prepareStatement(str1);
                     ResultSet res = stmt1.executeQuery(str1);
                     res.next();
@@ -129,8 +129,7 @@ public void exited(MouseEvent e) {
                     DealerMobNo.setText("");
                     DealerTinNo.setText("");
                     DealerGenderDrop.getSelectionModel().clearSelection();
-//                    Stage stage = (Stage)SubmitButton.getScene().getWindow();
-//                    stage.close();
+
                 }
                 else{
                     JOptionPane.showMessageDialog(null, "Dealer Tin No Already Exist");

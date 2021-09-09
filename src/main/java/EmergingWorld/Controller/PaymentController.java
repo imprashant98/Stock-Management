@@ -30,15 +30,20 @@ import javax.swing.JOptionPane;
 public class PaymentController implements Initializable {
 
 
-Connection con;
+
+    Connection con;
 
     @FXML
     public Button search;
-@FXML
-public Button backButton;
+    @FXML
+    public Button backButton;
 
     @FXML
     public TextField text_payment;
+
+    @FXML
+    public Button viewButton;
+
 
     @FXML
     public TextField text_bill;
@@ -84,8 +89,10 @@ public Button backButton;
             catch (ClassNotFoundException | SQLException e){
                 JOptionPane.showMessageDialog(null, e);
             }
-            //fill();
+
          }
+
+
     }
      @FXML
     void OnClickbill(ActionEvent event) {
@@ -108,12 +115,13 @@ public Button backButton;
             catch (ClassNotFoundException | SQLException e){
                 JOptionPane.showMessageDialog(null, e);
             }
-            //fill();
+
          }
 
     }
 
-public void fill(){
+
+public void  fill(){
         ObservableList<Payment> data = FXCollections.observableArrayList();
         col_bill.setCellValueFactory(new PropertyValueFactory<>("rid"));
         col_payMode.setCellValueFactory(new PropertyValueFactory<>("rpay"));
@@ -142,7 +150,9 @@ public void fill(){
         // TODO
         fill();
     }
-
+public void onView(ActionEvent event){
+         fill();
+}
 
 
 public void onBack(ActionEvent event) {
@@ -159,3 +169,5 @@ public void exited(MouseEvent e) {
     ((Button) e.getSource()).setScaleY(1);
 }
 }
+
+

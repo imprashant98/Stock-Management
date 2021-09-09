@@ -17,7 +17,8 @@
             </ImageView>
          </graphic>
       </Button>
-      <Button fx:id="category" alignment="CENTER" layoutX="107.0" layoutY="292.0" mnemonicParsing="false" onAction="#categoryButton" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="90.0" prefWidth="152.0" textAlignment="CENTER">
+      <Button fx:id="category" alignment="CENTER" layoutX="107.0" layoutY="292.0" mnemonicParsing="false"
+              onAction="#categoryButton" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="90.0" prefWidth="152.0" textAlignment="CENTER">
          <graphic>
             <ImageView id="bi2" fitHeight="90.0" fitWidth="179.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -26,7 +27,8 @@
             </ImageView>
          </graphic>
       </Button>
-      <Button fx:id="item" alignment="CENTER" layoutX="529.0" layoutY="162.0" mnemonicParsing="false" onAction="#itemButton" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="90.0" prefWidth="152.0" textAlignment="CENTER">
+      <Button fx:id="item" alignment="CENTER" layoutX="529.0" layoutY="162.0" mnemonicParsing="false"
+              onAction="#itemButton" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="90.0" prefWidth="152.0" textAlignment="CENTER">
          <graphic>
             <ImageView id="bi3" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -35,7 +37,8 @@
             </ImageView>
          </graphic>
       </Button>
-      <Button fx:id="employee" alignment="CENTER" layoutX="107.0" layoutY="548.0" mnemonicParsing="false" onAction="#employeeButton" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="90.0" prefWidth="152.0" textAlignment="CENTER">
+      <Button fx:id="employee" alignment="CENTER" layoutX="107.0" layoutY="548.0" mnemonicParsing="false" onAction="#employeeButton"
+              onMouseEntered="#entered" onMouseExited="#exited" prefHeight="90.0" prefWidth="152.0" textAlignment="CENTER">
          <graphic>
             <ImageView id="bi4" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -44,7 +47,8 @@
             </ImageView>
          </graphic>
       </Button>
-      <Button fx:id="bills1" alignment="CENTER" layoutX="316.0" layoutY="292.0" mnemonicParsing="false" onAction="#bills1Button" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="90.0" prefWidth="152.0" textAlignment="CENTER">
+      <Button fx:id="bills1" alignment="CENTER" layoutX="316.0" layoutY="292.0" mnemonicParsing="false"
+              onAction="#bills1Button" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="90.0" prefWidth="152.0" textAlignment="CENTER">
          <graphic>
             <ImageView id="bi5" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -53,7 +57,8 @@
             </ImageView>
          </graphic>
       </Button>
-      <Button fx:id="purchases" alignment="CENTER" layoutX="529.0" layoutY="292.0" mnemonicParsing="false" onAction="#purchasesButton" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="90.0" prefWidth="152.0" textAlignment="CENTER">
+      <Button fx:id="purchases" alignment="CENTER" layoutX="529.0" layoutY="292.0" mnemonicParsing="false"
+              onAction="#purchasesButton" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="90.0" prefWidth="152.0" textAlignment="CENTER">
          <graphic>
             <ImageView id="bi6" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -62,7 +67,8 @@
             </ImageView>
          </graphic>
       </Button>
-      <Button fx:id="bills" alignment="CENTER" layoutX="107.0" layoutY="424.0" mnemonicParsing="false" onAction="#billsButton" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="90.0" prefWidth="152.0" textAlignment="CENTER">
+      <Button fx:id="bills" alignment="CENTER" layoutX="107.0" layoutY="424.0" mnemonicParsing="false"
+              onAction="#billsButton" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="90.0" prefWidth="152.0" textAlignment="CENTER">
          <graphic>
             <ImageView id="bi7" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -71,7 +77,8 @@
             </ImageView>
          </graphic>
       </Button>
-      <Button fx:id="warranty" alignment="CENTER" layoutX="316.0" layoutY="424.0" mnemonicParsing="false" onAction="#warrantyButton" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="98.0" prefWidth="168.0" textAlignment="CENTER">
+      <Button fx:id="warranty" alignment="CENTER" layoutX="316.0" layoutY="424.0" mnemonicParsing="false"
+              onAction="#warrantyButton" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="98.0" prefWidth="168.0" textAlignment="CENTER">
          <graphic>
             <ImageView id="bi8" fitHeight="68.0" fitWidth="155.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -80,7 +87,8 @@
             </ImageView>
          </graphic>
       </Button>
-      <Button fx:id="payment" alignment="CENTER" layoutX="529.0" layoutY="424.0" mnemonicParsing="false" onAction="#paymentButton" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="98.0" prefWidth="168.0" textAlignment="CENTER">
+      <Button fx:id="payment" alignment="CENTER" layoutX="529.0" layoutY="424.0" mnemonicParsing="false"
+              onAction="#paymentButton" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="98.0" prefWidth="168.0" textAlignment="CENTER">
          <graphic>
             <ImageView id="bi9" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -94,11 +102,13 @@
             <Font name="Forte" size="65.0" />
          </font>
       </Label>
-      <Button fx:id="logout" layoutX="602.0" layoutY="731.0" onAction="#logoutButton" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="46.0" prefWidth="155.0" style="-fx-background-color: #DC143C;" text="Log Out" textFill="WHITE">
+      <Button fx:id="logout" layoutX="602.0" layoutY="731.0" onAction="#logoutButton" onMouseEntered="#entered"
+              onMouseExited="#exited" prefHeight="46.0" prefWidth="155.0" style="-fx-background-color: #DC143C;" text="Log Out" textFill="WHITE">
          <font>
             <Font name="Noto Serif Regular" size="26.0" />
          </font></Button>
-      <Button layoutX="529.0" layoutY="548.0" mnemonicParsing="false" onAction="#onDealer" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="98.0" prefWidth="168.0" style="-fx-background-color: #0f445d;">
+      <Button layoutX="529.0" layoutY="548.0" mnemonicParsing="false" onAction="#onDealer" onMouseEntered="#entered"
+              onMouseExited="#exited" prefHeight="98.0" prefWidth="168.0" style="-fx-background-color: #0f445d;">
       <graphic>
          <ImageView id="bi9" fitHeight="49.0" fitWidth="151.0" pickOnBounds="true" preserveRatio="true">
             <image>

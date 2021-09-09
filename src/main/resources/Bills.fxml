@@ -5,7 +5,8 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane id="AnchorPane" fx:id="BillsMainPane" prefHeight="828.0" prefWidth="824.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="EmergingWorld.Controller.BillsController">
+<AnchorPane id="AnchorPane" fx:id="BillsMainPane" prefHeight="828.0" prefWidth="824.0" xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="EmergingWorld.Controller.BillsController">
    <children>
       <Pane fx:id="BillsTopPane" prefHeight="193.0" prefWidth="824.0" style="-fx-background-color: #16161d;">
          <children>
@@ -43,12 +44,14 @@
               </columns>
             </TableView>
             <DatePicker fx:id="BillsDate" layoutX="14.0" layoutY="126.0" prefHeight="46.0" prefWidth="311.0" promptText="Select Date" style="-fx-background-color: #a842a1;" />
-            <Button fx:id="RefreshButton" layoutX="618.0" layoutY="87.0" onAction="#RefreshAction" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="51.0" prefWidth="155.0" style="-fx-background-color: #560c59;" text="REFRESH" textFill="WHITE">
+            <Button fx:id="RefreshButton" layoutX="618.0" layoutY="87.0" onAction="#RefreshAction" onMouseEntered="#entered"
+                    onMouseExited="#exited" prefHeight="51.0" prefWidth="155.0" style="-fx-background-color: #560c59;" text="REFRESH" textFill="WHITE">
                <font>
                   <Font size="24.0" />
                </font></Button>
          
-             <Button fx:id="backButton" layoutX="14.0" layoutY="2.0" mnemonicParsing="false" onAction="#onBack" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="25.0" prefWidth="58.0" style="-fx-background-color: red;" text="&lt;Back">
+             <Button fx:id="backButton" layoutX="14.0" layoutY="2.0" mnemonicParsing="false" onAction="#onBack" onMouseEntered="#entered"
+                     onMouseExited="#exited" prefHeight="25.0" prefWidth="58.0" style="-fx-background-color: red;" text="&lt;Back">
                  <font>
                      <Font name="System Bold" size="12.0" />
                  </font>

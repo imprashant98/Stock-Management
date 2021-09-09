@@ -5,7 +5,9 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane id="AnchorPane" fx:id="AddEmpMainPane" prefHeight="759.0" prefWidth="759.0" style="-fx-background-color: #16161d;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="EmergingWorld.Controller.AddEmployeeController">
+<AnchorPane id="AnchorPane" fx:id="AddEmpMainPane" prefHeight="759.0" prefWidth="759.0"
+            style="-fx-background-color: #16161d;" xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="EmergingWorld.Controller.AddEmployeeController">
    <children>
       <Pane fx:id="AddEmpTopPane" layoutY="-1.0" prefHeight="197.0" prefWidth="759.0">
          <children>
@@ -52,7 +54,8 @@
             <TextField fx:id="EmpMobNo" layoutX="245.0" layoutY="287.0" prefHeight="39.0" prefWidth="381.0" promptText="Enter Contact Number" />
 
             <TextField fx:id="employeeEmail" layoutX="245.0" layoutY="338.0" prefHeight="39.0" prefWidth="381.0" promptText="Enter e-Mail Address" />
-            <ComboBox fx:id="EmpGenderDrop" layoutX="244.0" layoutY="135.0" prefHeight="39.0" prefWidth="381.0" promptText="SELECT" style="-fx-background-color: cyan;" visibleRowCount="2" />
+            <ComboBox fx:id="EmpGenderDrop" layoutX="244.0" layoutY="135.0" prefHeight="39.0"
+                      prefWidth="381.0" promptText="SELECT" style="-fx-background-color: cyan;" visibleRowCount="2" />
             <Label fx:id="labelPost" layoutX="12.0" layoutY="196.0" prefHeight="25.0" prefWidth="85.0" text="Designation" textFill="WHITE">
                <font>
                   <Font size="16.0" />
@@ -65,12 +68,14 @@
                   <Font size="16.0" />
                </font>
             </Label>
-            <Button fx:id="SubmitButton" layoutX="486.0" layoutY="473.0" onAction="#SubmitAction" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="43.0" prefWidth="139.0" style="-fx-background-color: #560c59;" text="SUBMIT" textFill="WHITE">-->
+            <Button fx:id="SubmitButton" layoutX="486.0" layoutY="473.0" onAction="#SubmitAction" onMouseEntered="#entered"
+                    onMouseExited="#exited" prefHeight="43.0" prefWidth="139.0" style="-fx-background-color: #560c59;" text="SUBMIT" textFill="WHITE">-->
                            <font>
                               <Font name="Abyssinica SIL" size="24.0" />
                            </font>
             </Button>
-            <Button fx:id="clearButton" layoutX="241.0" layoutY="473.0" mnemonicParsing="false" onAction="#onClear" prefHeight="45.0" prefWidth="139.0" style="-fx-background-color: #bf4646;" text="Clear" textFill="WHITE">
+            <Button fx:id="clearButton" layoutX="241.0" layoutY="473.0" mnemonicParsing="false" onAction="#onClear"
+                    prefHeight="45.0" prefWidth="139.0" style="-fx-background-color: #bf4646;" text="Clear" textFill="WHITE">
                <font>
                   <Font size="24.0" />
                </font>
@@ -84,7 +89,8 @@
          </children>
       </Pane>
          
-            <Button layoutX="14.0" layoutY="196.0" mnemonicParsing="false" onAction="#onBack" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="25.0" prefWidth="58.0" style="-fx-background-color: red;" text="&lt;Back">
+            <Button layoutX="14.0" layoutY="196.0" mnemonicParsing="false" onAction="#onBack" onMouseEntered="#entered"
+                    onMouseExited="#exited" prefHeight="25.0" prefWidth="58.0" style="-fx-background-color: red;" text="&lt;Back">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>

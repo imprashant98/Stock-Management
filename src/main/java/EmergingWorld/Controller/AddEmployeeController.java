@@ -111,6 +111,7 @@ public void exited(MouseEvent e) {
         return citizen;
     }
     @FXML
+    //Extracting the data from the user part and performing the action into the database
     public void SubmitAction(ActionEvent event) {
         int c1 = check(EmpMobNo.getText());
         int c2 = check(EmpCitizenshipNo.getText());
@@ -158,7 +159,7 @@ public void exited(MouseEvent e) {
     
                         JOptionPane.showMessageDialog(null, "Employee Added");
 
-                    
+                    //Setting the blank text after adding the data
                     EmpName.setText("");
                     EmpAddr.setText("");
                     EmpMobNo.setText("");
@@ -189,7 +190,7 @@ public void exited(MouseEvent e) {
         // TODO
         ObservableList<String> options = FXCollections.observableArrayList("Male","Female");
     
-        enterPost.getItems().addAll("Owner", "Branch Manager","Associate Manager","Salesman","Accountant","Receptionist","Cleaner");
+        enterPost.getItems().addAll("Owner", "Branch Manager","Associate Manager","Salesman","Accountant","Receptionist","Cleaner"); //Adding data to the combo box inorder to select the post
         
         EmpGenderDrop.setItems(options);
     }

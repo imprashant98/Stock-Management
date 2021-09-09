@@ -5,7 +5,8 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="838.0" prefWidth="791.0" style="-fx-background-color: #16161d;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="EmergingWorld.Controller.CategoryFXMLController">
+<AnchorPane id="AnchorPane" prefHeight="838.0" prefWidth="791.0" style="-fx-background-color: #16161d;"
+            xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="EmergingWorld.Controller.CategoryFXMLController">
     <children>
         <Pane prefHeight="158.0" prefWidth="631.0">
             <children>
@@ -19,7 +20,8 @@
         <Pane layoutY="198.0" prefHeight="638.0" prefWidth="791.0" style="-fx-background-color: #16161d;">
             <children>
 
-                <Button fx:id="backButton" layoutX="14.0" layoutY="15.0" mnemonicParsing="false" onAction="#onBack" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="25.0" prefWidth="58.0" style="-fx-background-color: red;" text="&lt;Back">
+                <Button fx:id="backButton" layoutX="14.0" layoutY="15.0" mnemonicParsing="false" onAction="#onBack"
+                        onMouseEntered="#entered" onMouseExited="#exited" prefHeight="25.0" prefWidth="58.0" style="-fx-background-color: red;" text="&lt;Back">
                     <font>
                         <Font name="System Bold" size="12.0" />
                     </font>
@@ -31,17 +33,20 @@
                         <TableColumn fx:id="col3" prefWidth="272.0" text="Total Quantity" />
                     </columns>
                 </TableView>
-                <Button fx:id="refresh" layoutX="500.0" layoutY="28.0" onAction="#ButtonHandleAction" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="46.0" prefWidth="101.0" style="-fx-background-color: #560c59;" text="Refresh" textFill="WHITE">
+                <Button fx:id="refresh" layoutX="500.0" layoutY="28.0" onAction="#ButtonHandleAction" onMouseEntered="#entered"
+                        onMouseExited="#exited" prefHeight="46.0" prefWidth="101.0" style="-fx-background-color: #560c59;" text="Refresh" textFill="WHITE">
                     <font>
                         <Font size="20.0" />
                     </font>
                 </Button>
-                <Button fx:id="addCategory" layoutX="344.0" layoutY="28.0" onAction="#ButtonHandleAction" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="46.0" prefWidth="120.0" style="-fx-background-color: #560c59;" text="Add Category" textFill="WHITE">
+                <Button fx:id="addCategory" layoutX="344.0" layoutY="28.0" onAction="#ButtonHandleAction" onMouseEntered="#entered"
+                        onMouseExited="#exited" prefHeight="46.0" prefWidth="120.0" style="-fx-background-color: #560c59;" text="Add Category" textFill="WHITE">
                     <font>
                         <Font size="16.0" />
                     </font>
                 </Button>
-                <Button fx:id="remove" layoutX="637.0" layoutY="28.0" onAction="#ButtonHandleAction" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="46.0" prefWidth="101.0" style="-fx-background-color: #560c59;" text="Remove" textFill="WHITE">
+                <Button fx:id="remove" layoutX="637.0" layoutY="28.0" onAction="#ButtonHandleAction" onMouseEntered="#entered"
+                        onMouseExited="#exited" prefHeight="46.0" prefWidth="101.0" style="-fx-background-color: #560c59;" text="Remove" textFill="WHITE">
                     <font>
                         <Font size="19.0" />
                     </font>

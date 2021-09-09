@@ -5,7 +5,10 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane id="AnchorPane" fx:id="PurchasesMainPane" prefHeight="814.0" prefWidth="845.0" style="-fx-background-color: #16161d;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="EmergingWorld.Controller.PurchasesController">
+<AnchorPane id="AnchorPane" fx:id="PurchasesMainPane" prefHeight="814.0" prefWidth="845.0"
+            style="-fx-background-color: #16161d;" xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="EmergingWorld.Controller.PurchasesController">
    <children>
       <Pane fx:id="purchasesTopPane" prefHeight="195.0" prefWidth="845.0">
          <children>
@@ -28,11 +31,15 @@
                   <TableColumn fx:id="PurchaseDateCol" prefWidth="150.0" text="DATE" />
                </columns>
             </TableView>
-            <Button fx:id="PurchaseDateButton" layoutX="441.0" layoutY="99.0" onAction="#SearchByDateAction" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="46.0" prefWidth="178.0" style="-fx-background-color: #560c59;" text="SEARCH BY DATE" textFill="WHITE">
+            <Button fx:id="PurchaseDateButton" layoutX="441.0" layoutY="99.0"
+                    onAction="#SearchByDateAction" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="46.0"
+                    prefWidth="178.0" style="-fx-background-color: #560c59;" text="SEARCH BY DATE" textFill="WHITE">
                <font>
                   <Font size="18.0" />
                </font></Button>
-            <Button fx:id="PurchaseProductIdButton" layoutX="441.0" layoutY="37.0" onAction="#SearchByPidAction" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="46.0" prefWidth="178.0" style="-fx-background-color: #560c59;" text="SEARCH BY BILL ID" textFill="WHITE">
+            <Button fx:id="PurchaseProductIdButton" layoutX="441.0" layoutY="37.0"
+                    onAction="#SearchByPidAction" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="46.0"
+                    prefWidth="178.0" style="-fx-background-color: #560c59;" text="SEARCH BY BILL ID" textFill="WHITE">
                <font>
                   <Font size="18.0" />
                </font></Button>
@@ -41,17 +48,24 @@
                   <Font name="Abyssinica SIL" size="17.0" />
                </font>
             </TextField>
-            <DatePicker fx:id="PurchaseDate" layoutX="225.0" layoutY="99.0" prefHeight="46.0" prefWidth="197.0" promptText="Select Date" style="-fx-background-color: #a842a1;" />
-            <Button fx:id="DealersButton" layoutX="647.0" layoutY="37.0" onAction="#DealersAction" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="46.0" prefWidth="131.0" style="-fx-background-color: #560c59;" text="DEALERS" textFill="WHITE">
+            <DatePicker fx:id="PurchaseDate" layoutX="225.0" layoutY="99.0" prefHeight="46.0"
+                        prefWidth="197.0" promptText="Select Date" style="-fx-background-color: #a842a1;" />
+            <Button fx:id="DealersButton" layoutX="647.0" layoutY="37.0" onAction="#DealersAction"
+                    onMouseEntered="#entered" onMouseExited="#exited" prefHeight="46.0" prefWidth="131.0"
+                    style="-fx-background-color: #560c59;" text="DEALERS" textFill="WHITE">
                <font>
                   <Font size="18.0" />
                </font></Button>
-            <Button fx:id="RefreshButton" layoutX="647.0" layoutY="99.0" onAction="#RefreshAction" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="46.0" prefWidth="131.0" style="-fx-background-color: #560c59;" text="REFRESH" textFill="WHITE">
+            <Button fx:id="RefreshButton" layoutX="647.0" layoutY="99.0" onAction="#RefreshAction"
+                    onMouseEntered="#entered" onMouseExited="#exited" prefHeight="46.0" prefWidth="131.0"
+                    style="-fx-background-color: #560c59;" text="REFRESH" textFill="WHITE">
                <font>
                   <Font size="18.0" />
                </font></Button>
 
-            <Button fx:id="backButton" layoutX="11.0" layoutY="11.0" mnemonicParsing="false" onAction="#onBack" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="25.0" prefWidth="58.0" style="-fx-background-color: red;" text="&lt;Back">
+            <Button fx:id="backButton" layoutX="11.0" layoutY="11.0" mnemonicParsing="false"
+                    onAction="#onBack" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="25.0"
+                    prefWidth="58.0" style="-fx-background-color: red;" text="&lt;Back">
 
                <font>
                   <Font name="System Bold" size="12.0" />
