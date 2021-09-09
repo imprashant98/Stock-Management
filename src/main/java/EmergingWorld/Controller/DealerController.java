@@ -89,11 +89,7 @@ public Pane RemDealerBottomPane;
 
             StageManager.getInstance().addDealerStage.show();
             StageManager.getInstance().dealerStage.hide();
-//            AnchorPane root1 = FXMLLoader.load(getClass().getResource("AddDealer.fxml"));
-//            Stage stage = new Stage(StageStyle.DECORATED);
-//            stage.setTitle("Add A New Dealer");
-//            stage.setScene(new Scene(root1));
-//            stage.show();
+
 
     }
 
