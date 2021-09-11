@@ -65,7 +65,7 @@ public class ItemController implements Initializable {
     public Button RemoveButton;
 
     @FXML
-    public Button search;
+    public Button view;
 
     @FXML
     public Button refresh;
@@ -131,32 +131,43 @@ public class ItemController implements Initializable {
             TablePname.setCellValueFactory(new PropertyValueFactory<>("rname"));
             TableQuantity.setCellValueFactory(new PropertyValueFactory<>("rquantity"));
             TablePrice.setCellValueFactory(new PropertyValueFactory<>("rpricepp"));
-            TableDId.setCellValueFactory(new PropertyValueFactory<>("rdealerid"));    
-        if ((Button) event.getSource() == search) {
+            TableDId.setCellValueFactory(new PropertyValueFactory<>("rdealerid"));
 
-            
-            //productTable.setItems(data);
-            try {
-                int c = 0;
-    
-                Class.forName("java.sql.Driver");
-                con = DriverManager.getConnection("jdbc:mysql://localhost:3306/storemanagement?&serverTimezone=UTC&autoReconnect=true&failOverReadOnly=false&maxReconnects=10", "root", "");
-                String str = "select * from " + str1 + "";
-                PreparedStatement stmt = con.prepareStatement(str);
-                ResultSet rs = stmt.executeQuery();
-               
-                while (rs.next()) {
-                    data.add(new Product1(++c, rs.getString(1), rs.getString(2), rs.getInt(3), rs.getInt(4), rs.getString(5)));
-               
+        if ((Button) event.getSource() == view) {
+
+            if (str1 == null)
+            {
+                JOptionPane.showMessageDialog(null, "Select the Components first");
+            }
+            else {
+                //productTable.setItems(data);
+                try {
+                    int c = 0;
+
+                    Class.forName("java.sql.Driver");
+                    con = DriverManager.getConnection("jdbc:mysql://localhost:3306/storemanagement?&serverTimezone=UTC&autoReconnect=true&failOverReadOnly=false&maxReconnects=10", "root", "");
+                    String str = "select * from " + str1 + "";
+                    PreparedStatement stmt = con.prepareStatement(str);
+                    ResultSet rs = stmt.executeQuery();
+
+                    while (rs.next()) {
+                        data.add(new Product1(++c,
+                                rs.getString(1),
+                                rs.getString(2),
+                                rs.getInt(3),
+                                rs.getInt(4),
+                                rs.getString(5)));
+
+                    }
+
+                    productTable.setItems(data);
+                    //tableCategory.getColumns().addAll(col1,col2,col3);
+                    stmt.close();
+                    rs.close();
+                } catch (Exception e) {
+                    JOptionPane.showMessageDialog(null, e.getMessage());
+
                 }
-
-                productTable.setItems(data);
-                //tableCategory.getColumns().addAll(col1,col2,col3);
-                stmt.close();
-                rs.close();
-            } catch (Exception e) {
-                JOptionPane.showMessageDialog(null, e.getMessage());
-
             }
 
         }
