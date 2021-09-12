@@ -82,9 +82,9 @@
       </Label>
       <TextField fx:id="f11" editable="false" layoutX="552.0" layoutY="118.0" prefHeight="25.0" prefWidth="126.0"
                  promptText="xxxxxxx"/>
-      <Button fx:id="clearButton" layoutX="104.0" layoutY="577.0" mnemonicParsing="false" onAction="#onClear"
-              prefHeight="51.0" prefWidth="213.0" style="-fx-background-color: #bf4646;" text="Clear"
-              textFill="WHITE">
+      <Button fx:id="clearButton" layoutX="104.0" layoutY="577.0" onMouseEntered="#entered" onMouseExited="#exited"
+              mnemonicParsing="false" onAction="#onClear"  prefHeight="51.0" prefWidth="213.0"
+              style="-fx-background-color: #bf4646;" text="Clear" textFill="WHITE">
          <font>
             <Font size="24.0"/>
          </font>
@@ -96,7 +96,7 @@
       </Label>
       <Button layoutX="29.0" layoutY="28.0" mnemonicParsing="false" onAction="#onBack" onMouseEntered="#entered"
               onMouseExited="#exited" prefHeight="25.0" prefWidth="58.0" style="-fx-background-color: red;"
-              text="&lt;Back">
+              text="Back">
          <font>
             <Font name="System Bold" size="12.0"/>
          </font>

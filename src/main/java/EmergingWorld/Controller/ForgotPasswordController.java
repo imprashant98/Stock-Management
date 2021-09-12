@@ -72,7 +72,7 @@ public void SetPassAction(ActionEvent event) {
             String str1;
             Class.forName("java.sql.Driver");
             con = DriverManager.getConnection("jdbc:mysql://localhost:3306/storemanagement?&serverTimezone=UTC&autoReconnect=true&failOverReadOnly=false&maxReconnects=10", "root", "");
-            String str = "update user set Password  = '" + a + "'";
+            String str = "update userbase set Password  = '" + a + "'";
             PreparedStatement stmt = con.prepareStatement(str);
             stmt.executeUpdate(str);
             stmt.close();
@@ -82,8 +82,10 @@ public void SetPassAction(ActionEvent event) {
             
         }
         SetPass.setDisable(true);
-        Stage stage = (Stage) SetPass.getScene().getWindow();
-        stage.close();
+//        Stage stage = (Stage) SetPass.getScene().getWindow();
+//        stage.close();
+        StageManager.getInstance().forgetPasswordStage.hide();
+        StageManager.getInstance().mainLoginStage.show();
     }
 }
 
