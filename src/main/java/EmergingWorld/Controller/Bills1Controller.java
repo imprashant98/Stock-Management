@@ -299,7 +299,7 @@ public void generateBill(ActionEvent event) {
     int to = Integer.parseInt(s10);
     
     if (c == 0 || c1 != 10 || total.getText().equals("") || customerName.getText().equals("")||address.getText().equals("")||payment.getText().equals("")) {
-        JOptionPane.showMessageDialog(null, "Something is wrong");
+        JOptionPane.showMessageDialog(null, "Place the proper data for the required field");
     } else {
         try {
             Class.forName("java.sql.Driver");
@@ -398,7 +398,7 @@ public void generateBill(ActionEvent event) {
             my_bill.close();
             String spl[] = s7.split("-");
             String strr = "select Quantity from " + s3 + " where Company = '" + spl[0] + "' and ProductName = '" + spl[1] + "'";
-            PreparedStatement stmt3 = con.prepareStatement(strr);
+             PreparedStatement stmt3 = con.prepareStatement(strr);
             ResultSet rs3 = stmt3.executeQuery();
             rs3.next();
             int f = rs3.getInt(1);
